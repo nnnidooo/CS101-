@@ -25,11 +25,18 @@ public class CS101 {
 
         System.out.print("Enter a number: ");
         int number = sc.nextInt();
-        if (number % 2 == 0) {
+        if (number % 2 == 0) {//det sån i java vi finder ud af om et tal er lige.
             System.out.println(number + " is even.");
         } else {
             System.out.println(number + " is odd.");
         }
+
+        //Methods 4
+
+        String firstName = "Nadine";
+        String lastName = " Hejazi";
+        firstName = firstName.substring(0, firstName.length()-5);
+        System.out.println(firstName + lastName);
 
     }
 
@@ -59,6 +66,7 @@ public class CS101 {
         }
         System.out.println("The minimum number is: " + min);
     }
+}
 
 //Notater om void og no void i methods.
 //Metoden printMin er erklæret med void, fordi den ikke returnerer en værdi.
@@ -68,4 +76,3 @@ public class CS101 {
 //Formålet med denne metode er at beregne maksimum af tre tal og returnere resultatet,
 //så det kan bruges til ydeligere kode, hvis det er nødvendigt.
 
-}
