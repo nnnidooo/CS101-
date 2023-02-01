@@ -10,7 +10,7 @@ public class CS101 {
         } else if (personsAge < 18) {
             System.out.println("You are not eligible to vote");
         }
-
+        //Methods 2
         System.out.print("Enter first number: ");
         int a = sc.nextInt();
         System.out.print("Enter second number: ");
@@ -21,6 +21,15 @@ public class CS101 {
         printMax(a, b, c);
         printMin(a, b, c);
 
+        //Methods 3
+
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
+        if (number % 2 == 0) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }
 
     }
 
@@ -36,8 +45,8 @@ public class CS101 {
         return max;
     }
 
-    public static void printMax(int a,int b,int c){
-        System.out.println("The maximum number is: "+ getMax(a,b,c));
+    public static void printMax(int a, int b, int c) {
+        System.out.println("The maximum number is: " + getMax(a, b, c));
     }
 
     public static void printMin(int a, int b, int c) {
@@ -48,7 +57,15 @@ public class CS101 {
         if (c < min) {
             min = c;
         }
-        System.out.println("The minimum number is: "+ min);
+        System.out.println("The minimum number is: " + min);
     }
-}
 
+//Notater om void og no void i methods.
+//Metoden printMin er erklæret med void, fordi den ikke returnerer en værdi.
+//Det udfører simpelthen en handling, som at vise minimum af tre tal til konsollen.
+//Med andre ord har metodens formål at vise information til brugeren, snarere end at give en værdi.
+//I modsætning er metoden getMax erklæret med int,da den returnerer en værdi til os.
+//Formålet med denne metode er at beregne maksimum af tre tal og returnere resultatet,
+//så det kan bruges til ydeligere kode, hvis det er nødvendigt.
+
+}
