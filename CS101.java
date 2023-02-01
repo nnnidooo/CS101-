@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class CS101 {
-    //Methods 1
     public static void main(String[] args) {
         //methods 1
         Scanner sc = new Scanner(System.in);
@@ -11,24 +10,45 @@ public class CS101 {
         } else if (personsAge < 18) {
             System.out.println("You are not eligible to vote");
         }
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+        System.out.print("Enter third number: ");
+        int c = sc.nextInt();
+
+        printMax(a, b, c);
+        printMin(a, b, c);
+
+
     }
 
     //Methods 2
-    public static void maximumNumber(int first, int second, int third) {
-        int max = getMax(2, 5, 3);
-        System.out.println(max);
+    public static int getMax(int a, int b, int c) {
+        int max = a;
+        if (b > max) {
+            max = b;
+        }
+        if (c > max) {
+            max = c;
+        }
+        return max;
     }
 
-    public static void minimumNumber(int first, int second, int third) {
-        int min = getMax(2, 5, 3);
-        System.out.println(min);
+    public static void printMax(int a,int b,int c){
+        System.out.println("The maximum number is: "+ getMax(a,b,c));
     }
 
-    public static void evenOrNot(int first){
-        boolean evenNumber = (num % 2 == 0);
-        int personsNum = sc.nextInt();
-        if ()
+    public static void printMin(int a, int b, int c) {
+        int min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min) {
+            min = c;
+        }
+        System.out.println("The minimum number is: "+ min);
     }
 }
-
 
