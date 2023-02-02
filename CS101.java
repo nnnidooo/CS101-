@@ -1,4 +1,7 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
+
 public class CS101 {
     public static void main(String[] args) {
         //methods 1
@@ -38,6 +41,14 @@ public class CS101 {
         firstName = firstName.substring(0, firstName.length()-5);
         System.out.println(firstName + lastName);
 
+
+        //Classes and objects
+        Car toyota = new Car("aygo", 100.000);
+        System.out.println(toyota);
+        System.out.println(toyota.getModel());
+        toyota.stop();
+        toyota.start();
+        toyota.move();
     }
 
     //Methods 2
