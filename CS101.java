@@ -57,6 +57,8 @@ public class CS101 {
         Employee secondEmployee = new Employee("Matt", "Johnson", -345);
 
 
+        System.out.println("Lises yearly salary " + firstEmployee.getYearlySalary());
+        System.out.println("Matts yearly salary "+ secondEmployee.getYearlySalary());
 
     }
 
