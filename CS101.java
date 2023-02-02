@@ -42,7 +42,7 @@ public class CS101 {
         System.out.println(firstName + lastName);
 
 
-        //Classes and objects
+        //Classes and objects car&driver
         Car toyota = new Car("aygo", 100.000);
         Driver mercedes = new Driver("Jonas", 32);
         System.out.println(toyota);
@@ -51,6 +51,13 @@ public class CS101 {
         toyota.stop();
         toyota.start();
         toyota.move();
+
+        //Classes and objects Employee
+        Employee firstEmployee = new Employee("Lise","Nielsen",43564);
+        Employee secondEmployee = new Employee("Matt", "Johnson", -345);
+
+
+
     }
 
     //Methods 2
