@@ -1,7 +1,6 @@
  public class Driver {
     private String name;
     private int age;
-}
 
     public Driver(String name, int age) {
     this.name = name;
@@ -17,4 +16,12 @@
     public int getAge(){
             return age;
     }
+
+     @Override
+     public String toString() {
+         return "Driver{" +
+                 "name='" + name + '\'' +
+                 ",age=" + age + '\'' +
+                 '}';
+     }
  }

@@ -44,8 +44,10 @@ public class CS101 {
 
         //Classes and objects
         Car toyota = new Car("aygo", 100.000);
+        Driver mercedes = new Driver("Jonas", 32);
         System.out.println(toyota);
-        System.out.println(toyota.getModel());
+        System.out.println(mercedes);
+
         toyota.stop();
         toyota.start();
         toyota.move();
