@@ -6,7 +6,11 @@ public class Employee {
     public Employee (String name,String lastname, double monthlySalary) {
         this.name = name;
         this.lastname = lastname;
-        this.monthlySalary =(monthlySalary > 0) ? monthlySalary : 0.0;
+        if(monthlySalary > 0){
+            this.monthlySalary = monthlySalary;
+        } else {
+            this.monthlySalary = 0.0;
+        }
     }
 
     public String getName() {
@@ -36,8 +40,8 @@ public class Employee {
         return this.monthlySalary * 12;
     }
 
-    public void raise(double raise10) {
-        this.monthlySalary *= (10 / 100);
+    public void raise() {
+       monthlySalary *= 1.1;
     }
     @Override
     public String toString() {
@@ -50,8 +54,3 @@ public class Employee {
     }
 }
 
-
-// (?:) = ternary operator, den sætter enten instance variablen til at være 0,0 hvis det ikke er positivt.
-//Eller så forbliver den bare som værdien monthlySalary.
-//Det er afhængigt af betingelsen monthlySalary > 0.
-//koden tjekker om monthlySalary er positiv og hvis ikke er den så 0.0.

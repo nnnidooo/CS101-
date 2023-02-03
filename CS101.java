@@ -60,6 +60,12 @@ public class CS101 {
         System.out.println("Lises yearly salary " + firstEmployee.getYearlySalary());
         System.out.println("Matts yearly salary "+ secondEmployee.getYearlySalary());
 
+        firstEmployee.raise();
+        secondEmployee.raise();
+
+        System.out.println(firstEmployee.getName() + " earns "+ firstEmployee.getYearlySalary()+ " per year after 10% raise");
+        System.out.println(secondEmployee.getName() + " earns "+ secondEmployee.getYearlySalary()+ " per year after 10% raise");
+
     }
 
     //Methods 2
